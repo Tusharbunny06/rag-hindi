@@ -1,0 +1,11 @@
+# Python 3.10+  (tested on Python 3.13 with the versions in the comments)
+pymupdf>=1.24              # PDF text + table extraction (tested 2.0)
+chromadb>=1.0              # vector database, runs in-process (tested 1.5.9)
+sentence-transformers>=3.0 # BAAI/bge-m3 embeddings (tested 6.2.0)
+transformers>=4.45         # local LLM backend (tested 5.20.2)
+torch>=2.2                 # CPU build is enough (tested 2.14.1)
+numpy>=1.26
+requests>=2.31             # Groq / Gemini / OpenAI / Ollama backends
+python-dotenv>=1.0         # reads API keys from .env
+anthropic>=0.40            # only for RAG_LLM=anthropic
+pytest>=8                  # unit tests

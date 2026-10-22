@@ -1,0 +1,22 @@
+Negative controls for the faithfulness judge (deliberately wrong / partly hallucinated answers)
+
+Q: Who co-wrote the autobiography, and in what year was it published?
+Injected answer: It was co-written by Vikram Sarabhai and published in 2005.
+Judge faithfulness: 0.00
+  UNSUPPORTED · The autobiography was co-written by Vikram Sarabhai.
+  UNSUPPORTED · The autobiography was published in 2005.
+
+Q: How and where did Kalam die in 2015?
+Injected answer: Kalam died in Shillong on 27 July 2015 while lecturing; he had been suffering from a long illness for years.
+Judge faithfulness: 0.75
+  supported   · Kalam died in Shillong
+  supported   · Kalam died on 27 July 2015
+  supported   · Kalam died while lecturing
+  UNSUPPORTED · He had been suffering from a long illness for years
+
+Q: कलाम को भारत रत्न किस वर्ष प्राप्त हुआ?
+Injected answer: कलाम को भारत रत्न 1997 में मिला और उसी वर्ष उन्हें नोबेल पुरस्कार भी मिला।
+Judge faithfulness: 0.50
+  supported   · कलाम को भारत रत्न 1997 में मिला
+  UNSUPPORTED · उसी वर्ष उन्हें नोबेल पुरस्कार भी मिला
+

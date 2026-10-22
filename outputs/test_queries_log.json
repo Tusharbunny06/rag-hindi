@@ -1,0 +1,850 @@
+{
+  "summary": {
+    "answer_accuracy": "20/20 (100%)",
+    "citation_accuracy": "20/20 (100%)",
+    "out_of_scope_abstention": "3/3 (100%)",
+    "numbers_grounded": "20/20 (100%)",
+    "faithfulness_mean": 1.0,
+    "retrieval_ms_median": 395.6,
+    "llm_ttft_ms_median": 691.4,
+    "e2e_ttft_ms_median": 1067.0,
+    "e2e_ttft_ms_max": 2151.3
+  },
+  "results": [
+    {
+      "id": 1,
+      "lang": "hi",
+      "query": "SLV-III ने किस उपग्रह को कक्षा में स्थापित किया और किस वर्ष?",
+      "answer": "SLV-III ने 1980 में रोहिणी उपग्रह को कक्षा में स्थापित किया।",
+      "abstained": false,
+      "answerable": true,
+      "citations": [
+        "page: 8 · section: \"इसरो के वर्ष और SLV-III\" · chunk_id: 19 · score: 0.68",
+        "page: 20 · section: \"संस्थाओं एवं शब्दों की शब्दावली\" · chunk_id: 75 · score: 0.65",
+        "page: 17 · section: \"जीवन-रेखा (टाइमलाइन)\" · chunk_id: 59 · score: 0.64"
+      ],
+      "cited_chunk_ids": [
+        19,
+        75,
+        59
+      ],
+      "citation_mode": "model",
+      "numbers_grounded": true,
+      "retrieval_ms": 485.3,
+      "llm_ttft_ms": 236.4,
+      "ttft_ms": 721.8,
+      "llm_total_ms": 303.8,
+      "reference": "रोहिणी उपग्रह; 1980",
+      "correct": true,
+      "citation_correct": true,
+      "faithfulness": 1.0,
+      "claims": [
+        {
+          "claim": "SLV-III ने रोहिणी उपग्रह को कक्षा में स्थापित किया।",
+          "supported": true
+        },
+        {
+          "claim": "यह 1980 में हुआ।",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "lang": "hi",
+      "query": "कलाम को भारत रत्न किस वर्ष प्राप्त हुआ?",
+      "answer": "कलाम को भारत रत्न 1997 में प्राप्त हुआ।",
+      "abstained": false,
+      "answerable": true,
+      "citations": [
+        "page: 20 · section: \"संस्थाओं एवं शब्दों की शब्दावली\" · chunk_id: 79 · score: 0.72",
+        "page: 16 · section: \"पुरस्कार एवं सम्मान\" · chunk_id: 50 · score: 0.57"
+      ],
+      "cited_chunk_ids": [
+        79,
+        50
+      ],
+      "citation_mode": "model",
+      "numbers_grounded": true,
+      "retrieval_ms": 384.4,
+      "llm_ttft_ms": 634.0,
+      "ttft_ms": 1018.4,
+      "llm_total_ms": 671.1,
+      "reference": "1997",
+      "correct": true,
+      "citation_correct": true,
+      "faithfulness": 1.0,
+      "claims": [
+        {
+          "claim": "कलाम को भारत रत्न 1997 में प्राप्त हुआ।",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "lang": "hi",
+      "query": "पोखरण-II में कलाम की क्या भूमिका थी?",
+      "answer": "कलाम ने उस समय रक्षा मंत्री के वैज्ञानिक सलाहकार तथा डीआरडीओ के प्रमुख के रूप में परमाणु ऊर्जा विभाग के वैज्ञानिकों के साथ मिलकर एक केंद्रीय संगठनात्मक भूमिका निभाई।",
+      "abstained": false,
+      "answerable": true,
+      "citations": [
+        "page: 10 · section: \"पोखरण-II: 1998 के परमाणु परीक्षण\" · chunk_id: 27 · score: 0.64"
+      ],
+      "cited_chunk_ids": [
+        27
+      ],
+      "citation_mode": "model",
+      "numbers_grounded": true,
+      "retrieval_ms": 398.0,
+      "llm_ttft_ms": 658.8,
+      "ttft_ms": 1056.8,
+      "llm_total_ms": 795.5,
+      "reference": "केंद्रीय संगठनात्मक भूमिका — रक्षा मंत्री के वैज्ञानिक सलाहकार और डीआरडीओ प्रमुख के रूप में, परमाणु ऊर्जा विभाग के वैज्ञानिकों के साथ मिलकर",
+      "correct": true,
+      "citation_correct": true,
+      "faithfulness": 1.0,
+      "claims": [
+        {
+          "claim": "कलाम उस समय रक्षा मंत्री के वैज्ञानिक सलाहकार थे।",
+          "supported": true
+        },
+        {
+          "claim": "कलाम उस समय डीआरडीओ के प्रमुख थे।",
+          "supported": true
+        },
+        {
+          "claim": "कलाम ने परमाणु ऊर्जा विभाग के वैज्ञानिकों के साथ मिलकर काम किया।",
+          "supported": true
+        },
+        {
+          "claim": "कलाम ने पोखरण-II में एक केंद्रीय संगठनात्मक भूमिका निभाई।",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "lang": "en",
+      "query": "Which institution did Kalam attend to study aeronautical engineering?",
+      "answer": "Kalam attended the Madras Institute of Technology (MIT) in Chennai to study aeronautical engineering.",
+      "abstained": false,
+      "answerable": true,
+      "citations": [
+        "page: 6 · section: \"कॉलेज के वर्ष और उड़ान का आकर्षण\" · chunk_id: 12 · score: 0.57"
+      ],
+      "cited_chunk_ids": [
+        12
+      ],
+      "citation_mode": "model",
+      "numbers_grounded": true,
+      "retrieval_ms": 490.1,
+      "llm_ttft_ms": 693.6,
+      "ttft_ms": 1183.7,
+      "llm_total_ms": 737.0,
+      "reference": "Madras Institute of Technology (MIT), Chennai",
+      "correct": true,
+      "citation_correct": true,
+      "faithfulness": 1.0,
+      "claims": [
+        {
+          "claim": "Kalam attended the Madras Institute of Technology (MIT) in Chennai.",
+          "supported": true
+        },
+        {
+          "claim": "He attended it to study aeronautical engineering.",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "lang": "en",
+      "query": "Who co-wrote the autobiography, and in what year was it published?",
+      "answer": "The autobiography was co-written by Arun Tiwari and published in 1999.",
+      "abstained": false,
+      "answerable": true,
+      "citations": [
+        "page: 3 · section: \"ए.पी.जे. अब्दुल कलाम कौन थे?\" · chunk_id: 4 · score: 0.53",
+        "page: 22 · section: \"त्वरित तथ्य-सारांश\" · chunk_id: 91 · score: 0.48",
+        "page: 17 · section: \"जीवन-रेखा (टाइमलाइन)\" · chunk_id: 63 · score: 0.45"
+      ],
+      "cited_chunk_ids": [
+        4,
+        91,
+        63
+      ],
+      "citation_mode": "model",
+      "numbers_grounded": true,
+      "retrieval_ms": 421.1,
+      "llm_ttft_ms": 587.6,
+      "ttft_ms": 1008.7,
+      "llm_total_ms": 649.8,
+      "reference": "Arun Tiwari (अरुण तिवारी); 1999",
+      "correct": true,
+      "citation_correct": true,
+      "faithfulness": 1.0,
+      "claims": [
+        {
+          "claim": "The autobiography was co-written by Arun Tiwari.",
+          "supported": true
+        },
+        {
+          "claim": "The autobiography was published in 1999.",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "lang": "en",
+      "query": "How and where did Kalam die in 2015?",
+      "answer": "Kalam died on July 27, 2015, in Shillong after collapsing while delivering a lecture to students at the Indian Institute of Management.",
+      "abstained": false,
+      "answerable": true,
+      "citations": [
+        "page: 15 · section: \"अंतिम क्षण तक शिक्षक (2007–2015)\" · chunk_id: 46 · score: 0.55",
+        "page: 17 · section: \"जीवन-रेखा (टाइमलाइन)\" · chunk_id: 66 · score: 0.44"
+      ],
+      "cited_chunk_ids": [
+        46,
+        66
+      ],
+      "citation_mode": "model",
+      "numbers_grounded": true,
+      "retrieval_ms": 356.5,
+      "llm_ttft_ms": 617.3,
+      "ttft_ms": 973.8,
+      "llm_total_ms": 700.4,
+      "reference": "27 July 2015 in Shillong (IIM Shillong): he collapsed while lecturing to students and died shortly after, aged 83",
+      "correct": true,
+      "citation_correct": true,
+      "faithfulness": 1.0,
+      "claims": [
+        {
+          "claim": "Kalam died on July 27, 2015.",
+          "supported": true
+        },
+        {
+          "claim": "Kalam died in Shillong.",
+          "supported": true
+        },
+        {
+          "claim": "Kalam died after collapsing while delivering a lecture to students.",
+          "supported": true
+        },
+        {
+          "claim": "The lecture was at the Indian Institute of Management.",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "lang": "en",
+      "query": "Which satellite did SLV-III put into orbit, and in which year?",
+      "answer": "SLV-III put the Rohini satellite into orbit in 1980.",
+      "abstained": false,
+      "answerable": true,
+      "citations": [
+        "page: 8 · section: \"इसरो के वर्ष और SLV-III\" · chunk_id: 19 · score: 0.65",
+        "page: 20 · section: \"संस्थाओं एवं शब्दों की शब्दावली\" · chunk_id: 75 · score: 0.57"
+      ],
+      "cited_chunk_ids": [
+        19,
+        75
+      ],
+      "citation_mode": "model",
+      "numbers_grounded": true,
+      "retrieval_ms": 454.4,
+      "llm_ttft_ms": 605.8,
+      "ttft_ms": 1060.2,
+      "llm_total_ms": 654.4,
+      "reference": "Rohini; 1980",
+      "correct": true,
+      "citation_correct": true,
+      "faithfulness": 1.0,
+      "claims": [
+        {
+          "claim": "SLV-III put the Rohini satellite into orbit",
+          "supported": true
+        },
+        {
+          "claim": "This happened in 1980",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "lang": "en",
+      "query": "In which year was Kalam awarded the Bharat Ratna?",
+      "answer": "Kalam was awarded the Bharat Ratna in 1997.",
+      "abstained": false,
+      "answerable": true,
+      "citations": [
+        "page: 20 · section: \"संस्थाओं एवं शब्दों की शब्दावली\" · chunk_id: 79 · score: 0.50",
+        "page: 16 · section: \"पुरस्कार एवं सम्मान\" · chunk_id: 50 · score: 0.43"
+      ],
+      "cited_chunk_ids": [
+        79,
+        50
+      ],
+      "citation_mode": "model",
+      "numbers_grounded": true,
+      "retrieval_ms": 435.4,
+      "llm_ttft_ms": 677.1,
+      "ttft_ms": 1112.5,
+      "llm_total_ms": 720.7,
+      "reference": "1997",
+      "correct": true,
+      "citation_correct": true,
+      "faithfulness": 1.0,
+      "claims": [
+        {
+          "claim": "Kalam was awarded the Bharat Ratna in 1997.",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "lang": "en",
+      "query": "What role did Kalam play in Pokhran-II?",
+      "answer": "Kalam played a central organizational role in Pokhran-II as the Scientific Adviser to the Defence Minister and the head of DRDO, working alongside scientists from the Department of Atomic Energy.",
+      "abstained": false,
+      "answerable": true,
+      "citations": [
+        "page: 10 · section: \"पोखरण-II: 1998 के परमाणु परीक्षण\" · chunk_id: 27 · score: 0.51"
+      ],
+      "cited_chunk_ids": [
+        27
+      ],
+      "citation_mode": "model",
+      "numbers_grounded": true,
+      "retrieval_ms": 424.2,
+      "llm_ttft_ms": 584.0,
+      "ttft_ms": 1008.3,
+      "llm_total_ms": 669.8,
+      "reference": "A central organisational role",
+      "correct": true,
+      "citation_correct": true,
+      "faithfulness": 1.0,
+      "claims": [
+        {
+          "claim": "Kalam played a central organizational role in Pokhran-II.",
+          "supported": true
+        },
+        {
+          "claim": "Kalam was the Scientific Adviser to the Defence Minister during Pokhran-II.",
+          "supported": true
+        },
+        {
+          "claim": "Kalam was the head of DRDO during Pokhran-II.",
+          "supported": true
+        },
+        {
+          "claim": "Kalam worked alongside scientists from the Department of Atomic Energy during Pokhran-II.",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "lang": "hi",
+      "query": "कलाम ने वैमानिकी इंजीनियरिंग किस संस्थान से पढ़ी?",
+      "answer": "कलाम ने वैमानिकी इंजीनियरिंग चेन्नई के मद्रास इंस्टीट्यूट ऑफ टेक्नोलॉजी (एमआईटी) से पढ़ी।",
+      "abstained": false,
+      "answerable": true,
+      "citations": [
+        "page: 6 · section: \"कॉलेज के वर्ष और उड़ान का आकर्षण\" · chunk_id: 12 · score: 0.70",
+        "page: 20 · section: \"संस्थाओं एवं शब्दों की शब्दावली\" · chunk_id: 77 · score: 0.66"
+      ],
+      "cited_chunk_ids": [
+        12,
+        77
+      ],
+      "citation_mode": "model",
+      "numbers_grounded": true,
+      "retrieval_ms": 387.7,
+      "llm_ttft_ms": 777.4,
+      "ttft_ms": 1165.1,
+      "llm_total_ms": 986.3,
+      "reference": "एमआईटी, चेन्नई",
+      "correct": true,
+      "citation_correct": true,
+      "faithfulness": 1.0,
+      "claims": [
+        {
+          "claim": "कलाम ने वैमानिकी इंजीनियरिंग चेन्नई के मद्रास इंस्टीट्यूट ऑफ टेक्नोलॉजी (एमआईटी) से पढ़ी।",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "lang": "hi",
+      "query": "अग्नि की उड़ान किसके साथ मिलकर लिखी गई और कब प्रकाशित हुई?",
+      "answer": "अग्नि की उड़ान वैज्ञानिक अरुण तिवारी के साथ मिलकर लिखी गई थी और इसका प्रकाशन 1999 में हुआ था।",
+      "abstained": false,
+      "answerable": true,
+      "citations": [
+        "page: 3 · section: \"ए.पी.जे. अब्दुल कलाम कौन थे?\" · chunk_id: 4 · score: 0.60",
+        "page: 17 · section: \"जीवन-रेखा (टाइमलाइन)\" · chunk_id: 63 · score: 0.58",
+        "page: 22 · section: \"त्वरित तथ्य-सारांश\" · chunk_id: 91 · score: 0.57"
+      ],
+      "cited_chunk_ids": [
+        4,
+        63,
+        91
+      ],
+      "citation_mode": "model",
+      "numbers_grounded": true,
+      "retrieval_ms": 383.2,
+      "llm_ttft_ms": 1372.8,
+      "ttft_ms": 1756.0,
+      "llm_total_ms": 1471.6,
+      "reference": "अरुण तिवारी के साथ; 1999",
+      "correct": true,
+      "citation_correct": true,
+      "faithfulness": 1.0,
+      "claims": [
+        {
+          "claim": "अग्नि की उड़ान वैज्ञानिक अरुण तिवारी के साथ मिलकर लिखी गई थी",
+          "supported": true
+        },
+        {
+          "claim": "अग्नि की उड़ान का प्रकाशन 1999 में हुआ था",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "lang": "hi",
+      "query": "कलाम का निधन कहाँ और कैसे हुआ?",
+      "answer": "कलाम का निधन 27 जुलाई 2015 को शिलांग के भारतीय प्रबंधन संस्थान में विद्यार्थियों को व्याख्यान देते समय गिरने के कुछ ही देर बाद हुआ।",
+      "abstained": false,
+      "answerable": true,
+      "citations": [
+        "page: 15 · section: \"अंतिम क्षण तक शिक्षक (2007–2015)\" · chunk_id: 46 · score: 0.63"
+      ],
+      "cited_chunk_ids": [
+        46
+      ],
+      "citation_mode": "model",
+      "numbers_grounded": true,
+      "retrieval_ms": 354.7,
+      "llm_ttft_ms": 649.4,
+      "ttft_ms": 1004.1,
+      "llm_total_ms": 773.4,
+      "reference": "27 जुलाई 2015 को शिलांग में, व्याख्यान देते समय गिरने के बाद",
+      "correct": true,
+      "citation_correct": true,
+      "faithfulness": 1.0,
+      "claims": [
+        {
+          "claim": "कलाम का निधन 27 जुलाई 2015 को हुआ।",
+          "supported": true
+        },
+        {
+          "claim": "कलाम का निधन शिलांग के भारतीय प्रबंधन संस्थान में विद्यार्थियों को व्याख्यान देते समय गिरने के कुछ ही देर बाद हुआ।",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "lang": "en",
+      "query": "What are the names of the missiles developed under the IGMDP and what do the names mean?",
+      "answer": "The missiles developed under the IGMDP are Nag (meaning \"Nag/Cobra\"), Prithvi (meaning \"Earth\"), Agni (meaning \"Fire\"), Trishul (meaning \"Trishul\"), and Akash (meaning \"Sky\").",
+      "abstained": false,
+      "answerable": true,
+      "citations": [
+        "page: 9 · section: \"निर्देशित मिसाइल कार्यक्रम\" · chunk_id: 25 · score: 0.44",
+        "page: 9 · section: \"निर्देशित मिसाइल कार्यक्रम\" · chunk_id: 21 · score: 0.42",
+        "page: 9 · section: \"निर्देशित मिसाइल कार्यक्रम\" · chunk_id: 22 · score: 0.41",
+        "page: 9 · section: \"निर्देशित मिसाइल कार्यक्रम\" · chunk_id: 23 · score: 0.41",
+        "page: 9 · section: \"निर्देशित मिसाइल कार्यक्रम\" · chunk_id: 24 · score: 0.40"
+      ],
+      "cited_chunk_ids": [
+        25,
+        21,
+        22,
+        23,
+        24
+      ],
+      "citation_mode": "model",
+      "numbers_grounded": true,
+      "retrieval_ms": 474.6,
+      "llm_ttft_ms": 874.9,
+      "ttft_ms": 1349.6,
+      "llm_total_ms": 989.6,
+      "reference": "Prithvi, Agni, Trishul, Akash, Nag (see page 9 table)",
+      "correct": true,
+      "citation_correct": true,
+      "faithfulness": 1.0,
+      "claims": [
+        {
+          "claim": "Nag is a missile developed under IGMDP.",
+          "supported": true
+        },
+        {
+          "claim": "The name Nag means \"Nag/Cobra\".",
+          "supported": true
+        },
+        {
+          "claim": "Prithvi is a missile developed under IGMDP.",
+          "supported": true
+        },
+        {
+          "claim": "The name Prithvi means \"Earth\".",
+          "supported": true
+        },
+        {
+          "claim": "Agni is a missile developed under IGMDP.",
+          "supported": true
+        },
+        {
+          "claim": "The name Agni means \"Fire\".",
+          "supported": true
+        },
+        {
+          "claim": "Trishul is a missile developed under IGMDP.",
+          "supported": true
+        },
+        {
+          "claim": "The name Trishul means \"Trishul\".",
+          "supported": true
+        },
+        {
+          "claim": "Akash is a missile developed under IGMDP.",
+          "supported": true
+        },
+        {
+          "claim": "The name Akash means \"Sky\".",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "lang": "en",
+      "query": "Why did Kalam not become a fighter pilot?",
+      "answer": "Kalam did not become a fighter pilot because he narrowly missed selection for the Indian Air Force, finishing in ninth place when only eight positions were available.",
+      "abstained": false,
+      "answerable": true,
+      "citations": [
+        "page: 6 · section: \"कॉलेज के वर्ष और उड़ान का आकर्षण\" · chunk_id: 13 · score: 0.50"
+      ],
+      "cited_chunk_ids": [
+        13
+      ],
+      "citation_mode": "model",
+      "numbers_grounded": true,
+      "retrieval_ms": 368.3,
+      "llm_ttft_ms": 842.2,
+      "ttft_ms": 1210.5,
+      "llm_total_ms": 905.9,
+      "reference": "He placed 9th for the Air Force when only 8 places were available",
+      "correct": true,
+      "citation_correct": true,
+      "faithfulness": 1.0,
+      "claims": [
+        {
+          "claim": "Kalam did not become a fighter pilot.",
+          "supported": true
+        },
+        {
+          "claim": "He narrowly missed selection for the Indian Air Force.",
+          "supported": true
+        },
+        {
+          "claim": "He finished in ninth place when only eight positions were available.",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "lang": "en",
+      "query": "How did Satish Dhawan handle the 1979 launch failure?",
+      "answer": "Satish Dhawan publicly took responsibility for the 1979 launch failure and protected his team.",
+      "abstained": false,
+      "answerable": true,
+      "citations": [
+        "page: 8 · section: \"इसरो के वर्ष और SLV-III\" · chunk_id: 18 · score: 0.58",
+        "page: 12 · section: \"गुरु एवं शिक्षक\" · chunk_id: 38 · score: 0.46"
+      ],
+      "cited_chunk_ids": [
+        18,
+        38
+      ],
+      "citation_mode": "model",
+      "numbers_grounded": true,
+      "retrieval_ms": 403.2,
+      "llm_ttft_ms": 1748.1,
+      "ttft_ms": 2151.3,
+      "llm_total_ms": 1826.2,
+      "reference": "He publicly took responsibility for the failure and protected his team",
+      "correct": true,
+      "citation_correct": true,
+      "faithfulness": 1.0,
+      "claims": [
+        {
+          "claim": "Satish Dhawan publicly took responsibility for the 1979 launch failure.",
+          "supported": true
+        },
+        {
+          "claim": "Satish Dhawan protected his team.",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "lang": "hi",
+      "query": "कलाम को \"जनता के राष्ट्रपति\" क्यों कहा गया?",
+      "answer": "कलाम को उनकी गर्मजोशी, सुलभता और आम नागरिकों, विशेषकर विद्यार्थियों के साथ अथक संवाद के कारण \"जनता के राष्ट्रपति\" कहा गया।",
+      "abstained": false,
+      "answerable": true,
+      "citations": [
+        "page: 14 · section: \"जनता के राष्ट्रपति (2002–2007)\" · chunk_id: 43 · score: 0.71"
+      ],
+      "cited_chunk_ids": [
+        43
+      ],
+      "citation_mode": "model",
+      "numbers_grounded": true,
+      "retrieval_ms": 395.6,
+      "llm_ttft_ms": 546.7,
+      "ttft_ms": 942.3,
+      "llm_total_ms": 662.2,
+      "reference": "अपनी गर्मजोशी, सुलभता और आम नागरिकों व विद्यार्थियों से अथक संवाद के कारण",
+      "correct": true,
+      "citation_correct": true,
+      "faithfulness": 1.0,
+      "claims": [
+        {
+          "claim": "कलाम को उनकी गर्मजोशी के कारण \"जनता के राष्ट्रपति\" कहा गया।",
+          "supported": true
+        },
+        {
+          "claim": "कलाम को उनकी सुलभता के कारण \"जनता के राष्ट्रपति\" कहा गया।",
+          "supported": true
+        },
+        {
+          "claim": "कलाम को आम नागरिकों के साथ अथक संवाद के कारण \"जनता के राष्ट्रपति\" कहा गया।",
+          "supported": true
+        },
+        {
+          "claim": "कलाम को विशेषकर विद्यार्थियों के साथ अथक संवाद के कारण \"जनता के राष्ट्रपति\" कहा गया।",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "lang": "en",
+      "query": "Who was Vikram Sarabhai?",
+      "answer": "Vikram Sarabhai was a visionary physicist widely regarded as the father of India's space program.",
+      "abstained": false,
+      "answerable": true,
+      "citations": [
+        "page: 7 · section: \"वैज्ञानिक करियर के पहले कदम\" · chunk_id: 15 · score: 0.48",
+        "page: 12 · section: \"गुरु एवं शिक्षक\" · chunk_id: 37 · score: 0.42"
+      ],
+      "cited_chunk_ids": [
+        15,
+        37
+      ],
+      "citation_mode": "model",
+      "numbers_grounded": true,
+      "retrieval_ms": 375.6,
+      "llm_ttft_ms": 691.4,
+      "ttft_ms": 1067.0,
+      "llm_total_ms": 720.6,
+      "reference": "Visionary physicist, father of India's space programme; Kalam's early mentor",
+      "correct": true,
+      "citation_correct": true,
+      "faithfulness": 1.0,
+      "claims": [
+        {
+          "claim": "Vikram Sarabhai was a visionary physicist.",
+          "supported": true
+        },
+        {
+          "claim": "Vikram Sarabhai is widely regarded as the father of India's space program.",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "lang": "en",
+      "query": "When and where was Kalam born?",
+      "answer": "Kalam was born on October 15, 1931, in Rameswaram, Tamil Nadu.",
+      "abstained": false,
+      "answerable": true,
+      "citations": [
+        "page: 4 · section: \"रामेश्वरम में बचपन\" · chunk_id: 5 · score: 0.54",
+        "page: 17 · section: \"जीवन-रेखा (टाइमलाइन)\" · chunk_id: 54 · score: 0.43"
+      ],
+      "cited_chunk_ids": [
+        5,
+        54
+      ],
+      "citation_mode": "model",
+      "numbers_grounded": true,
+      "retrieval_ms": 286.5,
+      "llm_ttft_ms": 1059.9,
+      "ttft_ms": 1346.3,
+      "llm_total_ms": 1128.0,
+      "reference": "15 October 1931, Rameswaram, Tamil Nadu",
+      "correct": true,
+      "citation_correct": true,
+      "faithfulness": 1.0,
+      "claims": [
+        {
+          "claim": "Kalam was born on October 15, 1931.",
+          "supported": true
+        },
+        {
+          "claim": "Kalam was born in Rameswaram, Tamil Nadu.",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "lang": "hi",
+      "query": "कलाम ने बचपन में अख़बार क्यों बाँटे?",
+      "answer": "द्वितीय विश्वयुद्ध के दौरान रेल सेवाओं में बाधा के कारण कलाम ने चलती ट्रेन से गिराए गए अख़बार एकत्रित करके बाँटे, जिससे उन्हें अपना पहला स्वयं कमाया धन मिला।",
+      "abstained": false,
+      "answerable": true,
+      "citations": [
+        "page: 4 · section: \"रामेश्वरम में बचपन\" · chunk_id: 7 · score: 0.58"
+      ],
+      "cited_chunk_ids": [
+        7
+      ],
+      "citation_mode": "model",
+      "numbers_grounded": true,
+      "retrieval_ms": 467.0,
+      "llm_ttft_ms": 722.8,
+      "ttft_ms": 1189.9,
+      "llm_total_ms": 871.2,
+      "reference": "परिवार की आय बढ़ाने / परिवार की मदद के लिए",
+      "correct": true,
+      "citation_correct": true,
+      "faithfulness": 1.0,
+      "claims": [
+        {
+          "claim": "द्वितीय विश्वयुद्ध के दौरान रेल सेवाओं में बाधा के कारण कलाम ने चलती ट्रेन से गिराए गए अख़बार एकत्रित करके बाँटे।",
+          "supported": true
+        },
+        {
+          "claim": "इससे उन्हें अपना पहला स्वयं कमाया धन मिला।",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "lang": "en",
+      "query": "Who helped Kalam pay his college fees?",
+      "answer": "His sister helped pay his college fees by pawning her jewelry.",
+      "abstained": false,
+      "answerable": true,
+      "citations": [
+        "page: 6 · section: \"कॉलेज के वर्ष और उड़ान का आकर्षण\" · chunk_id: 12 · score: 0.51"
+      ],
+      "cited_chunk_ids": [
+        12
+      ],
+      "citation_mode": "model",
+      "numbers_grounded": true,
+      "retrieval_ms": 410.3,
+      "llm_ttft_ms": 759.9,
+      "ttft_ms": 1170.2,
+      "llm_total_ms": 794.6,
+      "reference": "His sister, who pawned her jewellery",
+      "correct": true,
+      "citation_correct": true,
+      "faithfulness": 1.0,
+      "claims": [
+        {
+          "claim": "His sister helped pay his college fees.",
+          "supported": true
+        },
+        {
+          "claim": "She pawned her jewelry to do so.",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "lang": "en",
+      "query": "What is the population of Tokyo?",
+      "answer": "The document does not contain an answer to this question.",
+      "abstained": true,
+      "answerable": false,
+      "citations": [],
+      "cited_chunk_ids": [],
+      "citation_mode": "none",
+      "numbers_grounded": true,
+      "retrieval_ms": 313.6,
+      "llm_ttft_ms": 705.4,
+      "ttft_ms": 1019.0,
+      "llm_total_ms": 710.7,
+      "reference": "out of scope: should abstain",
+      "correct": true,
+      "citation_correct": null,
+      "faithfulness": null,
+      "claims": []
+    },
+    {
+      "id": 22,
+      "lang": "en",
+      "query": "Who won the 2018 FIFA World Cup?",
+      "answer": "The document does not contain an answer to this question.",
+      "abstained": true,
+      "answerable": false,
+      "citations": [],
+      "cited_chunk_ids": [],
+      "citation_mode": "none",
+      "numbers_grounded": true,
+      "retrieval_ms": 363.3,
+      "llm_ttft_ms": 591.7,
+      "ttft_ms": 955.0,
+      "llm_total_ms": 596.4,
+      "reference": "out of scope: should abstain",
+      "correct": true,
+      "citation_correct": null,
+      "faithfulness": null,
+      "claims": []
+    },
+    {
+      "id": 23,
+      "lang": "hi",
+      "query": "पाइथन प्रोग्रामिंग भाषा किसने बनाई?",
+      "answer": "दस्तावेज़ में इस प्रश्न का उत्तर उपलब्ध नहीं है।",
+      "abstained": true,
+      "answerable": false,
+      "citations": [],
+      "cited_chunk_ids": [],
+      "citation_mode": "none",
+      "numbers_grounded": true,
+      "retrieval_ms": 368.0,
+      "llm_ttft_ms": 1447.8,
+      "ttft_ms": 1815.9,
+      "llm_total_ms": 1455.1,
+      "reference": "out of scope: should abstain",
+      "correct": true,
+      "citation_correct": null,
+      "faithfulness": null,
+      "claims": []
+    }
+  ]
+}

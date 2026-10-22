@@ -1,0 +1,16 @@
+# secrets
+.env
+
+# rebuilt by `python rag.py ingest`
+chroma_db/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# local experiments
+scratch/

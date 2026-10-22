@@ -1,0 +1,225 @@
+{
+  "summary": {
+    "answer_accuracy": "5/6 (83%)",
+    "citation_accuracy": "6/6 (100%)",
+    "out_of_scope_abstention": "—",
+    "numbers_grounded": "6/6 (100%)",
+    "faithfulness_mean": 0.917,
+    "retrieval_ms_median": 395.9,
+    "llm_ttft_ms_median": 131524.95,
+    "e2e_ttft_ms_median": 131917.7,
+    "e2e_ttft_ms_max": 260754.8
+  },
+  "results": [
+    {
+      "id": 1,
+      "lang": "hi",
+      "query": "SLV-III ने किस उपग्रह को कक्षा में स्थापित किया और किस वर्ष?",
+      "answer": "SLV-III ने रोहिणी उपग्रह को कक्षा में स्थापित किया, जिससे भारत उन थोड़े-से देशों के समूह में आ गया जो अपने रॉकेटों से उपग्रह प्रक्षेपित कर सकते थे। 1980 में",
+      "abstained": false,
+      "answerable": true,
+      "citations": [
+        "page: 8 · section: \"इसरो के वर्ष और SLV-III\" · chunk_id: 19 · score: 0.68"
+      ],
+      "cited_chunk_ids": [
+        19
+      ],
+      "citation_mode": "model",
+      "numbers_grounded": true,
+      "retrieval_ms": 435.6,
+      "llm_ttft_ms": 99760.5,
+      "ttft_ms": 100196.1,
+      "llm_total_ms": 227573.8,
+      "reference": "रोहिणी उपग्रह; 1980",
+      "correct": true,
+      "citation_correct": true,
+      "faithfulness": 1.0,
+      "claims": [
+        {
+          "claim": "SLV-III ने रोहिणी उपग्रह को कक्षा में स्थापित किया।",
+          "supported": true
+        },
+        {
+          "claim": "इससे भारत उन थोड़े-से देशों के समूह में आ गया जो अपने रॉकेटों से उपग्रह प्रक्षेपित कर सकते थे।",
+          "supported": true
+        },
+        {
+          "claim": "यह घटना 1980 में हुई।",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "lang": "hi",
+      "query": "कलाम को भारत रत्न किस वर्ष प्राप्त हुआ?",
+      "answer": "वर्ष: 1997",
+      "abstained": false,
+      "answerable": true,
+      "citations": [
+        "page: 16 · section: \"पुरस्कार एवं सम्मान\" · chunk_id: 50 · score: 0.57",
+        "page: 16 · section: \"पुरस्कार एवं सम्मान\" · chunk_id: 51 · score: 0.45"
+      ],
+      "cited_chunk_ids": [
+        50,
+        51
+      ],
+      "citation_mode": "lexical",
+      "numbers_grounded": true,
+      "retrieval_ms": 408.8,
+      "llm_ttft_ms": 180893.7,
+      "ttft_ms": 181302.5,
+      "llm_total_ms": 184096.7,
+      "reference": "1997",
+      "correct": true,
+      "citation_correct": true,
+      "faithfulness": 1.0,
+      "claims": [
+        {
+          "claim": "कलाम को भारत रत्न 1997 में प्राप्त हुआ",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "lang": "hi",
+      "query": "पोखरण-II में कलाम की क्या भूमिका थी?",
+      "answer": "कलाम, जो उस समय रक्षा मंत्री के वैज्ञानिक सलाहकार तथा डीआरडीओ के प्रमुख के रूप में सेवारत थे, ने परमाणु ऊर्जा विभाग के वैज्ञानिकों के साथ मिलकर एक केंद्रीय संगठनात्मक भूमिका न",
+      "abstained": false,
+      "answerable": true,
+      "citations": [
+        "page: 10 · section: \"पोखरण-II: 1998 के परमाणु परीक्षण\" · chunk_id: 27 · score: 0.64"
+      ],
+      "cited_chunk_ids": [
+        27
+      ],
+      "citation_mode": "lexical",
+      "numbers_grounded": true,
+      "retrieval_ms": 383.0,
+      "llm_ttft_ms": 260371.8,
+      "ttft_ms": 260754.8,
+      "llm_total_ms": 379466.0,
+      "reference": "केंद्रीय संगठनात्मक भूमिका — रक्षा मंत्री के वैज्ञानिक सलाहकार और डीआरडीओ प्रमुख के रूप में, परमाणु ऊर्जा विभाग के वैज्ञानिकों के साथ मिलकर",
+      "correct": true,
+      "citation_correct": true,
+      "faithfulness": 1.0,
+      "claims": [
+        {
+          "claim": "कलाम उस समय रक्षा मंत्री के वैज्ञानिक सलाहकार थे।",
+          "supported": true
+        },
+        {
+          "claim": "कलाम उस समय डीआरडीओ के प्रमुख के रूप में सेवारत थे।",
+          "supported": true
+        },
+        {
+          "claim": "कलाम ने परमाणु ऊर्जा विभाग के वैज्ञानिकों के साथ मिलकर एक केंद्रीय संगठनात्मक भूमिका निभाई।",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "lang": "en",
+      "query": "Which institution did Kalam attend to study aeronautical engineering?",
+      "answer": "Chennai's Madras Institute of Technology (EAMT)",
+      "abstained": false,
+      "answerable": true,
+      "citations": [
+        "page: 6 · section: \"कॉलेज के वर्ष और उड़ान का आकर्षण\" · chunk_id: 12 · score: 0.57"
+      ],
+      "cited_chunk_ids": [
+        12
+      ],
+      "citation_mode": "top-1",
+      "numbers_grounded": true,
+      "retrieval_ms": 410.5,
+      "llm_ttft_ms": 149717.9,
+      "ttft_ms": 150128.3,
+      "llm_total_ms": 157120.9,
+      "reference": "Madras Institute of Technology (MIT), Chennai",
+      "correct": true,
+      "citation_correct": true,
+      "faithfulness": 1.0,
+      "claims": [
+        {
+          "claim": "Kalam attended Madras Institute of Technology in Chennai to study aeronautical engineering.",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "lang": "en",
+      "query": "Who co-wrote the autobiography, and in what year was it published?",
+      "answer": "Arun Tivari wrote the autobiography along with A.P.J. Abdul Kalam, which was published in 1999.",
+      "abstained": false,
+      "answerable": true,
+      "citations": [
+        "page: 3 · section: \"ए.पी.जे. अब्दुल कलाम कौन थे?\" · chunk_id: 4 · score: 0.53",
+        "page: 17 · section: \"जीवन-रेखा (टाइमलाइन)\" · chunk_id: 63 · score: 0.45"
+      ],
+      "cited_chunk_ids": [
+        4,
+        63
+      ],
+      "citation_mode": "model",
+      "numbers_grounded": true,
+      "retrieval_ms": 375.1,
+      "llm_ttft_ms": 113332.0,
+      "ttft_ms": 113707.1,
+      "llm_total_ms": 133637.8,
+      "reference": "Arun Tiwari (अरुण तिवारी); 1999",
+      "correct": true,
+      "citation_correct": true,
+      "faithfulness": 1.0,
+      "claims": [
+        {
+          "claim": "Arun Tivari co-wrote the autobiography with A.P.J. Abdul Kalam.",
+          "supported": true
+        },
+        {
+          "claim": "The autobiography was published in 1999.",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "lang": "en",
+      "query": "How and where did Kalam die in 2015?",
+      "answer": "Kalam died on July 27, 2015, while lecturing at Shilang's Indian National Development Society.",
+      "abstained": false,
+      "answerable": true,
+      "citations": [
+        "page: 15 · section: \"अंतिम क्षण तक शिक्षक (2007–2015)\" · chunk_id: 46 · score: 0.55",
+        "page: 17 · section: \"जीवन-रेखा (टाइमलाइन)\" · chunk_id: 66 · score: 0.44"
+      ],
+      "cited_chunk_ids": [
+        46,
+        66
+      ],
+      "citation_mode": "lexical",
+      "numbers_grounded": true,
+      "retrieval_ms": 336.0,
+      "llm_ttft_ms": 107493.4,
+      "ttft_ms": 107829.5,
+      "llm_total_ms": 124817.8,
+      "reference": "27 July 2015 in Shillong (IIM Shillong): he collapsed while lecturing to students and died shortly after, aged 83",
+      "correct": false,
+      "citation_correct": true,
+      "faithfulness": 0.5,
+      "claims": [
+        {
+          "claim": "Kalam died on July 27, 2015.",
+          "supported": true
+        },
+        {
+          "claim": "He died while lecturing at Shilang's Indian National Development Society.",
+          "supported": false
+        }
+      ]
+    }
+  ]
+}
