@@ -100,6 +100,9 @@ queries), Gemini, OpenAI, Anthropic, Ollama, a local Hugging Face model (no key)
 
 ## 6. How to run
 ```bash
+git clone https://github.com/Tusharbunny06/rag-hindi.git
+cd rag-hindi
+
 python -m venv .venv
 .venv\Scripts\activate             # Windows   (macOS/Linux: source .venv/bin/activate)
 pip install -r requirements.txt
@@ -114,6 +117,9 @@ python rag.py chat                 # interactive
 python rag.py chunks               # inspect the 95 chunks and their metadata
 python -m pytest                   # 15 unit tests (no model download needed)
 ```
+Tested with Python 3.13 on Windows and Linux. If Windows PowerShell says *"running scripts is disabled on this
+system"* when activating, run `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned` once, then activate again.
+
 With no API key, the local model is used automatically (~3 GB download; slow on CPU). Add `--llm extractive` to answer
 without any LLM. All settings can be overridden by environment variables, listed in `.env.example` and `hindi_rag/config.py`.
 No keys are stored in the repository.
